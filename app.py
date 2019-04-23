@@ -14,27 +14,6 @@ calDel = ""
 @application.route('/')
 def index():
     
-    # file_name = 'C:/Users/pruthviraaz41/Desktop/TestApp/descriptions.csv'
-    # droptbl = "DROP TABLE IF EXISTS food.images;"
-    # cur.execute(droptbl)
-    # with open(file_name, 'rt', encoding= 'Latin-1') as csvfile:
-    #     reader = csv.reader(csvfile,quotechar='`')
-    #     headers = next(reader)
-    
-    # start_time = time.time()
-    
-    # sqlcreate="create table if not exists images("
-    # for i in range(0, len(headers)):
-    #      sqlcreate +=  headers[i] + " varchar(100),"
-    # sqlcreate += "Idautonum int AUTO_INCREMENT PRIMARY KEY)"
-    # cur.execute(sqlcreate)
-    
-    # uploadqry="""LOAD DATA LOCAL INFILE 'C:/Users/pruthviraaz41/Desktop/TestApp/descriptions.csv'
-    #       INTO TABLE images FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\r' IGNORE 1 ROWS;"""
-    # cur.execute(uploadqry)
-    # db.commit()
-    
-    
     return render_template('index.html')
 
 
